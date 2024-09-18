@@ -20,6 +20,11 @@ This is a micro library, which means that it is a small, single-file library wit
 ```scala
 //> using dep "storky:storky:1.0.0,url=https://github.com/bjornregnell/storky/releases/download/v1.0.0/storky_3-1.0.0.jar"
 ```
+Or start the Scala REPL using Scala >= 3.5.0 with
+```bash
+scala repl --dep "storky:storky:1.0.0,url=https://github.com/bjornregnell/storky/releases/download/v1.0.0/storky_3-1.0.0.jar"
+```
+
 
 Then you can:
 ```scala
