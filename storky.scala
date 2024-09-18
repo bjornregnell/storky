@@ -7,8 +7,7 @@ object Store:
   /** Create an empty Store with keys of type K and values of type V.*/
   def empty[K, V](): Store[K, V] = new Store[K, V]()
 
-  /** Create a new Store from a byteString of a Store serialized with toByteString. */
-
+  /** Create a new Store[K, V] from a byteString of a Store serialized with toByteString. */
   def fromByteString[K, V](s: String): Store[K, V] = 
     val bs: Array[Byte] = java.util.Base64.getDecoder().decode(s)
     val bis = java.io.ByteArrayInputStream(bs)
