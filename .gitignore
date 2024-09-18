@@ -1,0 +1,8 @@
+.bsp
+.metals
+.scala-build
+.vscode
+**/*.jar
+**/*.class
+**/target
+**/metals.sbt
