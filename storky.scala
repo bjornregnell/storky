@@ -18,7 +18,7 @@ object Store:
       in.readObject().asInstanceOf[Store[K,V]]
     finally if in != null then in.close()
 
-/** A thread-safe, atomic, in-memory key value store with keys of type K and values of type V. */
+/** A thread-safe, in-memory key value store with keys of type K and values of type V. */
 @SerialVersionUID(123L)
 final class Store[K, V] private () extends Serializable:
   import scala.jdk.CollectionConverters.*
